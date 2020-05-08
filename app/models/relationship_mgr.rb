@@ -1,0 +1,2 @@
+class RelationshipMgr < ApplicationRecord
+end

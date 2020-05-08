@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  submit_date: 2020-05-07
+  decision_date: 2020-05-07
+  review_date: 2020-05-07
+  status: MyString
+
+two:
+  submit_date: 2020-05-07
+  decision_date: 2020-05-07
+  review_date: 2020-05-07
+  status: MyString
