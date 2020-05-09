@@ -1,5 +1,5 @@
 class RelationshipMgrsController < ApplicationController
-  before_action :set_relationship_mgr, only: [:show, :update, :destroy]
+  
 
   # GET /relationship_mgrs
   def index
@@ -10,7 +10,8 @@ class RelationshipMgrsController < ApplicationController
 
   # GET /relationship_mgrs/1
   def show
-    render json: @relationship_mgr
+    @relationship_mgr = RelationshipMgr.find(params[:id])
+    render json: @relationship_mgr.to_json(include: :borrowers)
   end
 
   # POST /relationship_mgrs
@@ -39,10 +40,10 @@ class RelationshipMgrsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_relationship_mgr
-      @relationship_mgr = RelationshipMgr.find(params[:id])
-    end
+    # # Use callbacks to share common setup or constraints between actions.
+    # def set_relationship_mgr
+    #   @relationship_mgr = RelationshipMgr.find(params[:id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def relationship_mgr_params

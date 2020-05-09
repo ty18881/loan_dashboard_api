@@ -111,3 +111,689 @@ Migrating to AddForeignKeyToBorrower (20200508024324)
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
   [1m[36mLoan Create (0.3ms)[0m  [1m[32mINSERT INTO "loans" ("principal_amount", "interest_rate", "maturity_date", "term", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["principal_amount", "62733.24"], ["interest_rate", "6.35"], ["maturity_date", "2022-05-26"], ["term", 2], ["created_at", "2020-05-08 23:34:23.303065"], ["updated_at", "2020-05-08 23:34:23.303065"]]
   [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/borrowers" for ::1 at 2020-05-08 19:36:00 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.9ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 13.6ms | ActiveRecord: 6.7ms | Allocations: 6180)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-05-08 19:36:00 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationshipmgrs" for ::1 at 2020-05-08 19:36:11 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/relationshipmgrs"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationshipmgr" for ::1 at 2020-05-08 19:36:15 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/relationshipmgr"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationship_manager" for ::1 at 2020-05-08 19:36:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/relationship_manager"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationship_mgr" for ::1 at 2020-05-08 19:36:43 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/relationship_mgr"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationship_mgrs" for ::1 at 2020-05-08 19:37:02 -0400
+Processing by RelationshipMgrsController#index as HTML
+  [1m[36mRelationshipMgr Load (0.8ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs"[0m
+  ↳ app/controllers/relationship_mgrs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 5.5ms | Allocations: 4569)
+
+
+Started GET "/loans" for ::1 at 2020-05-08 19:37:19 -0400
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.9ms)[0m  [1m[34mSELECT "loans".* FROM "loans"[0m
+  ↳ app/controllers/loans_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 3.5ms | Allocations: 5758)
+
+
+Started GET "/loans/2" for ::1 at 2020-05-08 19:37:25 -0400
+Processing by LoansController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/loans_controller.rb:44:in `set_loan'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1210)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 19:37:38 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (0.6ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 9.6ms | ActiveRecord: 4.2ms | Allocations: 5396)
+
+
+Started GET "/applications/3" for ::1 at 2020-05-08 19:37:45 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:44:in `set_application'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 900)
+
+
+Started GET "/relationship_mgrs" for ::1 at 2020-05-08 19:41:37 -0400
+Processing by RelationshipMgrsController#index as HTML
+  [1m[36mRelationshipMgr Load (0.3ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs"[0m
+  ↳ app/controllers/relationship_mgrs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1053)
+
+
+Started GET "/borrowers" for ::1 at 2020-05-08 19:41:50 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.5ms | Allocations: 1590)
+
+
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Update (0.7ms)[0m  [1m[33mUPDATE "borrowers" SET "rel_mgr_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["rel_mgr_id", 1], ["updated_at", "2020-05-08 23:42:24.995877"], ["id", 5]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/borrowers" for ::1 at 2020-05-08 19:42:29 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 1590)
+
+
+  [1m[36mBorrower Load (0.7ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Update (2.0ms)[0m  [1m[33mUPDATE "borrowers" SET "rel_mgr_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["rel_mgr_id", 1], ["updated_at", "2020-05-08 23:42:52.090065"], ["id", 1]]
+  [1m[35m (27.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/borrowers" for ::1 at 2020-05-08 19:42:54 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1590)
+
+
+  [1m[36mBorrower Load (0.6ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Update (0.6ms)[0m  [1m[33mUPDATE "borrowers" SET "rel_mgr_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["rel_mgr_id", 1], ["updated_at", "2020-05-08 23:43:28.812355"], ["id", 2]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/borrowers" for ::1 at 2020-05-08 19:43:31 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.5ms | Allocations: 1590)
+
+
+  [1m[36mBorrower Load (0.7ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Update (0.5ms)[0m  [1m[33mUPDATE "borrowers" SET "rel_mgr_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["rel_mgr_id", 2], ["updated_at", "2020-05-08 23:44:02.658851"], ["id", 6]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBorrower Load (2.2ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Update (0.3ms)[0m  [1m[33mUPDATE "borrowers" SET "rel_mgr_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["rel_mgr_id", 2], ["updated_at", "2020-05-08 23:44:13.850010"], ["id", 4]]
+  [1m[35m (6.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mBorrower Load (0.7ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Update (0.5ms)[0m  [1m[33mUPDATE "borrowers" SET "rel_mgr_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["rel_mgr_id", 2], ["updated_at", "2020-05-08 23:44:28.755426"], ["id", 3]]
+  [1m[35m (9.8ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/borrowers" for ::1 at 2020-05-08 19:44:30 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.5ms | Allocations: 1590)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 19:45:18 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.4ms | Allocations: 1427)
+
+
+Started GET "/loans" for ::1 at 2020-05-08 19:45:39 -0400
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans"[0m
+  ↳ app/controllers/loans_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1124)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 19:46:10 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.4ms | Allocations: 1427)
+
+
+Started GET "/loans" for ::1 at 2020-05-08 19:47:09 -0400
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans"[0m
+  ↳ app/controllers/loans_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1124)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Create (0.5ms)[0m  [1m[32mINSERT INTO "loans" ("principal_amount", "interest_rate", "maturity_date", "term", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["principal_amount", "66995.68"], ["interest_rate", "8.12"], ["maturity_date", "2025-07-14"], ["term", 5], ["created_at", "2020-05-08 23:47:56.764011"], ["updated_at", "2020-05-08 23:47:56.764011"]]
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Create (0.2ms)[0m  [1m[32mINSERT INTO "loans" ("principal_amount", "interest_rate", "maturity_date", "term", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["principal_amount", "72381.89"], ["interest_rate", "3.72"], ["maturity_date", "2025-07-22"], ["term", 5], ["created_at", "2020-05-08 23:47:56.771632"], ["updated_at", "2020-05-08 23:47:56.771632"]]
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Create (0.2ms)[0m  [1m[32mINSERT INTO "loans" ("principal_amount", "interest_rate", "maturity_date", "term", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["principal_amount", "80728.79"], ["interest_rate", "3.37"], ["maturity_date", "2025-07-06"], ["term", 5], ["created_at", "2020-05-08 23:47:56.777724"], ["updated_at", "2020-05-08 23:47:56.777724"]]
+  [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/loans" for ::1 at 2020-05-08 19:48:02 -0400
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.6ms)[0m  [1m[34mSELECT "loans".* FROM "loans"[0m
+  ↳ app/controllers/loans_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.6ms | Allocations: 1570)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 19:49:54 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1427)
+
+
+Started GET "/loans" for ::1 at 2020-05-08 19:50:44 -0400
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.3ms)[0m  [1m[34mSELECT "loans".* FROM "loans"[0m
+  ↳ app/controllers/loans_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 1569)
+
+
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mLoan Load (0.9ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Update (0.4ms)[0m  [1m[33mUPDATE "loans" SET "application_id" = $1, "updated_at" = $2 WHERE "loans"."id" = $3[0m  [["application_id", 1], ["updated_at", "2020-05-08 23:51:54.028424"], ["id", 1]]
+  [1m[35m (7.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mLoan Load (0.7ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Update (1.9ms)[0m  [1m[33mUPDATE "loans" SET "application_id" = $1, "updated_at" = $2 WHERE "loans"."id" = $3[0m  [["application_id", 2], ["updated_at", "2020-05-08 23:52:08.490281"], ["id", 2]]
+  [1m[35m (36.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mLoan Load (0.7ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Update (0.5ms)[0m  [1m[33mUPDATE "loans" SET "application_id" = $1, "updated_at" = $2 WHERE "loans"."id" = $3[0m  [["application_id", 3], ["updated_at", "2020-05-08 23:52:25.057149"], ["id", 3]]
+  [1m[35m (9.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mLoan Load (0.5ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Update (0.5ms)[0m  [1m[33mUPDATE "loans" SET "application_id" = $1, "updated_at" = $2 WHERE "loans"."id" = $3[0m  [["application_id", 3], ["updated_at", "2020-05-08 23:52:37.116846"], ["id", 4]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLoan Update (0.6ms)[0m  [1m[33mUPDATE "loans" SET "application_id" = $1, "updated_at" = $2 WHERE "loans"."id" = $3[0m  [["application_id", 4], ["updated_at", "2020-05-08 23:52:48.695929"], ["id", 5]]
+  [1m[35m (7.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/loans" for ::1 at 2020-05-08 19:52:52 -0400
+Processing by LoansController#index as HTML
+  [1m[36mLoan Load (0.4ms)[0m  [1m[34mSELECT "loans".* FROM "loans"[0m
+  ↳ app/controllers/loans_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1569)
+
+
+Started GET "/borrowers" for ::1 at 2020-05-08 19:55:22 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.5ms | Allocations: 1590)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 19:55:38 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.5ms | Allocations: 1427)
+
+
+Started GET "/relationship_mgrs" for ::1 at 2020-05-08 20:00:32 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (6.0.3) lib/active_record/migration.rb:586:in `check_pending!'
+activerecord (6.0.3) lib/active_record/migration.rb:564:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5812385862137909460)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeyToApplication (20200508235641)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mALTER TABLE "applications" ADD "borrower_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200508235641"]]
+  [1m[35m (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (4.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5812385862137909460)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/relationship_mgrs" for ::1 at 2020-05-08 20:01:42 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RelationshipMgrsController#index as HTML
+  [1m[36mRelationshipMgr Load (0.3ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs"[0m
+  ↳ app/controllers/relationship_mgrs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.7ms | ActiveRecord: 3.7ms | Allocations: 4584)
+
+
+Started GET "/relationship_mgrs/2" for ::1 at 2020-05-08 20:01:47 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRelationshipMgr Load (0.4ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:44:in `set_relationship_mgr'
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms | Allocations: 3546)
+
+
+  
+NoMethodError (undefined method `borrowers' for #<RelationshipMgr:0x00007ffff94e6410>):
+  
+app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Started GET "/relationship_mgrs/2" for ::1 at 2020-05-08 20:03:19 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRelationshipMgr Load (0.2ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:44:in `set_relationship_mgr'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 3.4ms | Allocations: 7042)
+
+
+  
+NoMethodError (undefined method `borrowers' for #<RelationshipMgr:0x00007ffff8b1daa0>):
+  
+app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Started GET "/relationship_mgrs/" for ::1 at 2020-05-08 20:03:27 -0400
+Processing by RelationshipMgrsController#index as HTML
+  [1m[36mRelationshipMgr Load (0.4ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs"[0m
+  ↳ app/controllers/relationship_mgrs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1057)
+
+
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:03:31 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.3ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:44:in `set_relationship_mgr'
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms | Allocations: 3375)
+
+
+  
+NoMethodError (undefined method `borrowers' for #<RelationshipMgr:0x00007ffff938b278>):
+  
+app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:03:59 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (1.7ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:44:in `set_relationship_mgr'
+Completed 500 Internal Server Error in 92ms (ActiveRecord: 26.1ms | Allocations: 7056)
+
+
+  
+NoMethodError (undefined method `borrower' for #<RelationshipMgr:0x00007ffff9494408>):
+  
+app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:06:52 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 453ms (ActiveRecord: 0.0ms | Allocations: 31294)
+
+
+  
+NoMethodError (undefined method `set_relationship_mgr' for #<RelationshipMgrsController:0x00007ffff8bb10e8>):
+  
+activesupport (6.0.3) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3) lib/abstract_controller/base.rb:136:in `process'
+actionpack (6.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:06:58 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms | Allocations: 31263)
+
+
+  
+NoMethodError (undefined method `set_relationship_mgr' for #<RelationshipMgrsController:0x00007fb9c457dd18>):
+  
+activesupport (6.0.3) lib/active_support/callbacks.rb:428:in `block in make_lambda'
+activesupport (6.0.3) lib/active_support/callbacks.rb:181:in `block (2 levels) in halting_and_conditional'
+actionpack (6.0.3) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (6.0.3) lib/active_support/callbacks.rb:182:in `block in halting_and_conditional'
+activesupport (6.0.3) lib/active_support/callbacks.rb:513:in `block in invoke_before'
+activesupport (6.0.3) lib/active_support/callbacks.rb:513:in `each'
+activesupport (6.0.3) lib/active_support/callbacks.rb:513:in `invoke_before'
+activesupport (6.0.3) lib/active_support/callbacks.rb:134:in `run_callbacks'
+actionpack (6.0.3) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.3) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.3) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.3) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.3) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.3) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.3) lib/abstract_controller/base.rb:136:in `process'
+actionpack (6.0.3) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:07:15 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.2ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.4ms | Allocations: 7023)
+
+
+  
+NoMethodError (undefined method `borrowers' for #<RelationshipMgr:0x00007fb9c431d7f8>):
+  
+app/controllers/relationship_mgrs_controller.rb:14:in `show'
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:09:56 -0400
+  
+SyntaxError (/mnt/c/dashboard_project/loan_dashboard_api/config/routes.rb:3: syntax error, unexpected [, expecting `do' or '{' or '('
+...rces :relationship_mgrs, only [:index, :show] do
+...                              ^
+/mnt/c/dashboard_project/loan_dashboard_api/config/routes.rb:3: syntax error, unexpected `do' for block, expecting `end'
+...p_mgrs, only [:index, :show] do
+...                             ^~
+/mnt/c/dashboard_project/loan_dashboard_api/config/routes.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+...   resources :borrowers, only [:index]
+...                              ^
+/mnt/c/dashboard_project/loan_dashboard_api/config/routes.rb:5: syntax error, unexpected `end', expecting end-of-input
+  end
+  ^~~
+):
+  
+config/routes.rb:3: syntax error, unexpected [, expecting `do' or '{' or '('
+config/routes.rb:3: syntax error, unexpected `do' for block, expecting `end'
+config/routes.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:3: syntax error, unexpected [, expecting `do' or '{' or '('
+config/routes.rb:3: syntax error, unexpected `do' for block, expecting `end'
+config/routes.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+config/routes.rb:5: syntax error, unexpected `end', expecting end-of-input
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:10:46 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.2ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.9ms | Allocations: 7003)
+
+
+  
+NoMethodError (undefined method `borrowers' for #<RelationshipMgr:0x00007ffff952d810>):
+  
+app/controllers/relationship_mgrs_controller.rb:14:in `show'
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:11:15 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (1.1ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 26.8ms | Allocations: 7019)
+
+
+  
+NoMethodError (undefined method `borrowers' for #<RelationshipMgr:0x00007ffff8fd2320>):
+  
+app/controllers/relationship_mgrs_controller.rb:14:in `show'
+  [1m[36mRelationshipMgr Load (0.5ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mRelationshipMgr Load (1.2ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:13:25 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.3ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 6.6ms | Allocations: 10616)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column borrowers.relationship_mgr_id does not exist
+LINE 1: SELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."rel...
+                                                    ^
+):
+  
+app/controllers/relationship_mgrs_controller.rb:14:in `show'
+  [1m[36mBorrower Load (5.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5812385862137909460)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to ChangeRelMgrColumnInBorrower (20200509001455)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "borrowers" RENAME COLUMN "rel_mgr_id" TO "relationship_mgr_id"[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200509001455"]]
+  [1m[35m (9.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5812385862137909460)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:16:37 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.2ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."relationship_mgr_id" = $1[0m  [["relationship_mgr_id", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:14:in `show'
+Completed 200 OK in 42ms (Views: 0.1ms | ActiveRecord: 10.3ms | Allocations: 10905)
+
+

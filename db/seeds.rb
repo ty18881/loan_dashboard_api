@@ -86,12 +86,12 @@
 
 ## create sample loans
 
-2.times do
+3.times do
     Loan.create(
         principal_amount: Faker::Number.decimal(l_digits: 5, r_digits:2),
         interest_rate: Faker::Number.decimal(l_digits: 1, r_digits:2),
-        maturity_date: Faker::Date.in_date_period(year: 2022, month: 5),
-        term: 2
+        maturity_date: Faker::Date.in_date_period(year: 2025, month: 7),
+        term: 5
     )
 end
 

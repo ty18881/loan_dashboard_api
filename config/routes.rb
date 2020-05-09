@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  resources :relationship_mgrs
+  # the relationship manager route should display assigned borrowers
+  resources :relationship_mgrs, only: [:index, :show] do
+    resources :borrowers, only: [:index, :show]
+  end
   resources :loans
   resources :applications
   resources :borrowers
