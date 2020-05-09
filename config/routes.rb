@@ -13,5 +13,8 @@ Rails.application.routes.draw do
   resources :borrowers, only: [:index, :show] do
     resources :applications, only: [:index, :show]
   end
+
+  ## borrower post route
+  resources :borrowers, only: [:create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

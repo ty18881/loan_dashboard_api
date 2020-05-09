@@ -1,6 +1,5 @@
 class BorrowersController < ApplicationController
-  # before_action :set_borrower, only: [:show, :update, :destroy]
-
+ 
   # GET /borrowers
   def index
     @borrowers = Borrower.all
@@ -47,6 +46,6 @@ class BorrowersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def borrower_params
-      params.require(:borrower).permit(:name, :state, :business_segment)
+      params.require(:borrower).permit(:name, :state, :business_segment, :relationship_mgr_id)
     end
 end

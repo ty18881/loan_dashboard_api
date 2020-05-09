@@ -2000,3 +2000,404 @@ Processing by AppsubmitsController#index as */*
 Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 819)
 
 
+Started GET "/applications" for ::1 at 2020-05-09 14:52:14 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (0.6ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+Started GET "/appsubmits" for ::1 at 2020-05-09 14:52:14 -0400
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.6ms | Allocations: 1742)
+
+
+Processing by AppsubmitsController#index as */*
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 11ms (Views: 0.2ms | ActiveRecord: 3.7ms | Allocations: 893)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 14:52:17 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (0.9ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.9ms | Allocations: 1521)
+
+
+Started GET "/appsubmits" for ::1 at 2020-05-09 14:52:17 -0400
+Processing by AppsubmitsController#index as */*
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 0.6ms | Allocations: 819)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 14:52:35 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 14:52:35 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+Processing by AppsubmitsController#index as */*
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.4ms | Allocations: 2255)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 1.9ms | Allocations: 1760)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 14:52:50 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Started GET "/appsubmits" for ::1 at 2020-05-09 14:52:50 -0400
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1749)
+
+
+Processing by AppsubmitsController#index as */*
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 819)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:02:05 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:02:05 -0400
+Processing by ApplicationsController#index as */*
+Processing by AppsubmitsController#index as */*
+  [1m[36mApplication Load (2.1ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 2.1ms | Allocations: 1809)
+
+
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 2532)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:04:35 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:04:35 -0400
+Processing by ApplicationsController#index as */*
+Processing by AppsubmitsController#index as */*
+  [1m[36mApplication Load (1.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 1.3ms | Allocations: 2342)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 2485)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:05:42 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:05:42 -0400
+Processing by AppsubmitsController#index as */*
+Processing by ApplicationsController#index as */*
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.6ms | Allocations: 1573)
+
+
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 2093)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:06:25 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:06:25 -0400
+Processing by AppsubmitsController#index as */*
+Processing by ApplicationsController#index as */*
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+  [1m[36mApplication Load (0.6ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 1.1ms | Allocations: 943)
+
+
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms | Allocations: 2256)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:06:45 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:06:45 -0400
+Processing by ApplicationsController#index as */*
+Processing by AppsubmitsController#index as */*
+  [1m[36mApplication Load (1.0ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 1.0ms | Allocations: 2123)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 2193)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:08:58 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:08:58 -0400
+Processing by AppsubmitsController#index as */*
+Processing by ApplicationsController#index as */*
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 949)
+
+
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.3ms | Allocations: 2261)
+
+
+Started GET "/borrowers/1" for ::1 at 2020-05-09 15:29:07 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBorrower Load (7.7ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:13:in `show'
+  [1m[36mApplication Load (0.7ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."borrower_id" = $1 LIMIT $2[0m  [["borrower_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:14:in `show'
+Completed 200 OK in 36ms (Views: 0.1ms | ActiveRecord: 15.3ms | Allocations: 7058)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-09 15:31:13 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:13:in `show'
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."borrower_id" = $1 LIMIT $2[0m  [["borrower_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:14:in `show'
+Completed 200 OK in 5ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1702)
+
+
+Started GET "/borrowers/3" for ::1 at 2020-05-09 15:31:16 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:13:in `show'
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."borrower_id" = $1 LIMIT $2[0m  [["borrower_id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:14:in `show'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 1688)
+
+
+Started GET "/borrowers/4" for ::1 at 2020-05-09 15:31:20 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:13:in `show'
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."borrower_id" = $1 LIMIT $2[0m  [["borrower_id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:14:in `show'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 0.7ms | Allocations: 1688)
+
+
+Started GET "/borrowers/5" for ::1 at 2020-05-09 15:31:23 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:13:in `show'
+  [1m[36mApplication Load (0.7ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."borrower_id" = $1 LIMIT $2[0m  [["borrower_id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:14:in `show'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.1ms | Allocations: 1528)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:43:56 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:43:56 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (0.9ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 23ms (Views: 16.7ms | ActiveRecord: 0.9ms | Allocations: 7000)
+
+
+Processing by AppsubmitsController#index as */*
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 10ms (Views: 2.4ms | ActiveRecord: 1.5ms | Allocations: 1293)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:44:51 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:44:51 -0400
+Processing by AppsubmitsController#index as */*
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (1.0ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 1.0ms | Allocations: 1651)
+
+
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 0.3ms | ActiveRecord: 5.2ms | Allocations: 2542)
+
+
+Started POST "/" for ::1 at 2020-05-09 15:45:41 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/applications" for ::1 at 2020-05-09 15:46:39 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:46:39 -0400
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppsubmitsController#index as */*
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (1.9ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 10.8ms | Allocations: 4501)
+
+
+Completed 200 OK in 34ms (Views: 15.3ms | ActiveRecord: 11.3ms | Allocations: 8833)
+
+
+Started POST "/" for ::1 at 2020-05-09 15:47:00 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/applications" for ::1 at 2020-05-09 15:47:57 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:47:58 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (1.7ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 58ms (Views: 36.6ms | ActiveRecord: 15.2ms | Allocations: 6664)
+
+
+Processing by AppsubmitsController#index as */*
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 1432)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:48:09 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:48:09 -0400
+Processing by ApplicationsController#index as */*
+Processing by AppsubmitsController#index as */*
+  [1m[36mApplication Load (0.6ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+  [1m[35m (11.1ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 20ms (Views: 0.4ms | ActiveRecord: 11.1ms | Allocations: 1942)
+
+
+Completed 200 OK in 65ms (Views: 48.3ms | ActiveRecord: 12.1ms | Allocations: 7476)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:48:43 -0400
+Processing by ApplicationsController#index as */*
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:48:43 -0400
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.5ms | Allocations: 1726)
+
+
+Processing by AppsubmitsController#index as */*
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 874)
+
+
+Started POST "/borrowers" for ::1 at 2020-05-09 15:49:01 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/borrowers"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/borrowers/" for ::1 at 2020-05-09 15:49:28 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.9ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:7:in `index'
+Completed 200 OK in 30ms (Views: 11.5ms | ActiveRecord: 4.4ms | Allocations: 6654)
+
+
+Started GET "/applications" for ::1 at 2020-05-09 15:52:12 -0400
+Started GET "/appsubmits" for ::1 at 2020-05-09 15:52:12 -0400
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationsController#index as */*
+  [1m[35m (9.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AppsubmitsController#index as */*
+  [1m[36mApplication Load (2.8ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT("appsubmits"."submit_date") AS count_submit_date, "appsubmits"."submit_date" AS appsubmits_submit_date FROM "appsubmits" GROUP BY "appsubmits"."submit_date"[0m
+  ↳ app/controllers/appsubmits_controller.rb:7:in `index'
+Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 6.9ms | Allocations: 2836)
+
+
+Completed 200 OK in 33ms (Views: 18.4ms | ActiveRecord: 10.6ms | Allocations: 10678)
+
+
+Started POST "/borrowers" for ::1 at 2020-05-09 15:52:26 -0400
+Processing by BorrowersController#create as */*
+  Parameters: {"name"=>"Test LLC", "state"=>"MA", "business_segment"=>"Regional Bank", "relationship_mgr_id"=>"2", "borrower"=>{"name"=>"Test LLC", "state"=>"MA", "business_segment"=>"Regional Bank", "relationship_mgr_id"=>"2"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/borrowers_controller.rb:20:in `create'
+  [1m[36mRelationshipMgr Load (8.5ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:20:in `create'
+  [1m[36mBorrower Create (1.3ms)[0m  [1m[32mINSERT INTO "borrowers" ("name", "state", "business_segment", "created_at", "updated_at", "relationship_mgr_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Test LLC"], ["state", "MA"], ["business_segment", "Regional Bank"], ["created_at", "2020-05-09 19:52:26.667019"], ["updated_at", "2020-05-09 19:52:26.667019"], ["relationship_mgr_id", 2]]
+  ↳ app/controllers/borrowers_controller.rb:20:in `create'
+  [1m[35m (7.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/borrowers_controller.rb:20:in `create'
+Completed 201 Created in 74ms (Views: 0.6ms | ActiveRecord: 26.6ms | Allocations: 13553)
+
+
+Started GET "/borrowers/" for ::1 at 2020-05-09 15:52:39 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (1.0ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:7:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 1.0ms | Allocations: 1793)
+
+
