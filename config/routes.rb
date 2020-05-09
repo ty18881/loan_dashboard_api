@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :appsubmits
   # the relationship manager route should display assigned borrowers
   resources :relationship_mgrs, only: [:index, :show] do
     resources :borrowers, only: [:index, :show]

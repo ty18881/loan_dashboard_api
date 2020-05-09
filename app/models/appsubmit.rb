@@ -1,0 +1,2 @@
+class Appsubmit < ApplicationRecord
+end
