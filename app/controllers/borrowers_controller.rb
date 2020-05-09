@@ -1,5 +1,5 @@
 class BorrowersController < ApplicationController
-  before_action :set_borrower, only: [:show, :update, :destroy]
+  # before_action :set_borrower, only: [:show, :update, :destroy]
 
   # GET /borrowers
   def index
@@ -10,7 +10,8 @@ class BorrowersController < ApplicationController
 
   # GET /borrowers/1
   def show
-    render json: @borrower
+    @borrower = Borrower.find(params[:id])
+    render json: @borrower.to_json(include: :application)
   end
 
   # POST /borrowers
@@ -40,9 +41,9 @@ class BorrowersController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_borrower
-      @borrower = Borrower.find(params[:id])
-    end
+    # def set_borrower
+    #   @borrower = Borrower.find(params[:id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def borrower_params

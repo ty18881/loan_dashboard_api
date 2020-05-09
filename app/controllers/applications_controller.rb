@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  before_action :set_application, only: [:show, :update, :destroy]
+  # before_action :set_application, only: [:show, :update, :destroy]
 
   # GET /applications
   def index
@@ -10,7 +10,8 @@ class ApplicationsController < ApplicationController
 
   # GET /applications/1
   def show
-    render json: @application
+    @application = Application.find(params[:id])
+    render json: @application.to_json(include: :loan)
   end
 
   # POST /applications
@@ -40,9 +41,9 @@ class ApplicationsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_application
-      @application = Application.find(params[:id])
-    end
+    # def set_application
+    #   @application = Application.find(params[:id])
+    # end
 
     # Only allow a trusted parameter "white list" through.
     def application_params

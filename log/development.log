@@ -797,3 +797,339 @@ Processing by RelationshipMgrsController#show as HTML
 Completed 200 OK in 42ms (Views: 0.1ms | ActiveRecord: 10.3ms | Allocations: 10905)
 
 
+Started GET "/borrowers" for ::1 at 2020-05-08 20:19:01 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1621)
+
+
+Started GET "/borrowers/1" for ::1 at 2020-05-08 20:22:08 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 5.2ms | Allocations: 5066)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:22:15 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 752)
+
+
+Started GET "/borrowers" for ::1 at 2020-05-08 20:24:35 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.4ms | Allocations: 1590)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5812385862137909460)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeyToBorrowers (20200509003124)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "borrowers" ADD CONSTRAINT "fk_rails_5298b547fc"
+FOREIGN KEY ("application_id")
+  REFERENCES "applications" ("id")
+[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5812385862137909460)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5812385862137909460)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddForeignKeyToBorrowers (20200509003124)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "borrowers" ADD "application_id" integer[0m
+  [1m[35m (17.2ms)[0m  [1m[35mALTER TABLE "borrowers" ADD CONSTRAINT "fk_rails_5298b547fc"
+FOREIGN KEY ("application_id")
+  REFERENCES "applications" ("id")
+[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200509003124"]]
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(5812385862137909460)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:33:27 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 5046)
+
+
+Started GET "/borrowers" for ::1 at 2020-05-08 20:33:49 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1682)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 20:33:52 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (6.1ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 156ms (Views: 87.0ms | ActiveRecord: 35.6ms | Allocations: 6127)
+
+
+Started GET "/applications/1" for ::1 at 2020-05-08 20:34:01 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:44:in `set_application'
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 904)
+
+
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:34:16 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.5ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+  [1m[36mBorrower Load (0.2ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."relationship_mgr_id" = $1[0m  [["relationship_mgr_id", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:14:in `show'
+Completed 200 OK in 18ms (Views: 0.1ms | ActiveRecord: 3.6ms | Allocations: 6107)
+
+
+Started GET "/notices" for ::1 at 2020-05-08 20:34:36 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/notices"):
+  
+actionpack (6.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3) lib/rails/engine.rb:527:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:34:42 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 768)
+
+
+Started GET "/applications/1" for ::1 at 2020-05-08 20:35:13 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:44:in `set_application'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 791)
+
+
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Load (0.9ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mApplication Update (0.8ms)[0m  [1m[33mUPDATE "applications" SET "borrower_id" = $1, "updated_at" = $2 WHERE "applications"."id" = $3[0m  [["borrower_id", 1], ["updated_at", "2020-05-09 00:36:02.843535"], ["id", 1]]
+  [1m[35m (8.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApplication Load (0.7ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mApplication Update (0.7ms)[0m  [1m[33mUPDATE "applications" SET "borrower_id" = $1, "updated_at" = $2 WHERE "applications"."id" = $3[0m  [["borrower_id", 2], ["updated_at", "2020-05-09 00:36:17.906058"], ["id", 2]]
+  [1m[35m (6.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mApplication Update (0.5ms)[0m  [1m[33mUPDATE "applications" SET "borrower_id" = $1, "updated_at" = $2 WHERE "applications"."id" = $3[0m  [["borrower_id", 3], ["updated_at", "2020-05-09 00:36:36.332611"], ["id", 3]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mApplication Load (0.7ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mApplication Update (0.5ms)[0m  [1m[33mUPDATE "applications" SET "borrower_id" = $1, "updated_at" = $2 WHERE "applications"."id" = $3[0m  [["borrower_id", 4], ["updated_at", "2020-05-09 00:36:48.779851"], ["id", 4]]
+  [1m[35m (9.2ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/applications/1" for ::1 at 2020-05-08 20:36:52 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:44:in `set_application'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 791)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:37:06 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms | Allocations: 769)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:39:22 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.2ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 18ms (Views: 0.3ms | ActiveRecord: 4.3ms | Allocations: 5828)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/borrowers" for ::1 at 2020-05-08 20:40:54 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.4ms | Allocations: 1634)
+
+
+Started GET "/borrowers/1" for ::1 at 2020-05-08 20:41:02 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 3ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 761)
+
+
+Started GET "/applications/1" for ::1 at 2020-05-08 20:41:17 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:44:in `set_application'
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 3.5ms | Allocations: 5435)
+
+
+Started GET "/relationship_mgrs" for ::1 at 2020-05-08 20:42:10 -0400
+Processing by RelationshipMgrsController#index as HTML
+  [1m[36mRelationshipMgr Load (0.7ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs"[0m
+  ↳ app/controllers/relationship_mgrs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 6.4ms | ActiveRecord: 3.5ms | Allocations: 4782)
+
+
+Started GET "/relationship_mgrs/1" for ::1 at 2020-05-08 20:42:15 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRelationshipMgr Load (0.5ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."relationship_mgr_id" = $1[0m  [["relationship_mgr_id", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:14:in `show'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2335)
+
+
+Started GET "/borrowers" for ::1 at 2020-05-08 20:42:40 -0400
+Processing by BorrowersController#index as HTML
+  [1m[36mBorrower Load (0.4ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers"[0m
+  ↳ app/controllers/borrowers_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 1634)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:42:47 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 761)
+
+
+  [1m[36mBorrower Load (0.5ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRelationshipMgr Load (0.7ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBorrower Update (1.0ms)[0m  [1m[33mUPDATE "borrowers" SET "application_id" = $1, "updated_at" = $2 WHERE "borrowers"."id" = $3[0m  [["application_id", 2], ["updated_at", "2020-05-09 00:43:18.698898"], ["id", 1]]
+  [1m[35m (7.0ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:43:23 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 761)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:43:26 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.3ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:44:in `set_borrower'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 761)
+
+
+Started GET "/borrowers/2" for ::1 at 2020-05-08 20:44:48 -0400
+Processing by BorrowersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBorrower Load (0.2ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:13:in `show'
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."borrower_id" = $1 LIMIT $2[0m  [["borrower_id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/borrowers_controller.rb:14:in `show'
+Completed 200 OK in 39ms (Views: 0.1ms | ActiveRecord: 7.6ms | Allocations: 11836)
+
+
+Started GET "/applications" for ::1 at 2020-05-08 20:45:57 -0400
+Processing by ApplicationsController#index as HTML
+  [1m[36mApplication Load (0.4ms)[0m  [1m[34mSELECT "applications".* FROM "applications"[0m
+  ↳ app/controllers/applications_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1488)
+
+
+Started GET "/applications/3" for ::1 at 2020-05-08 20:46:08 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mApplication Load (0.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:44:in `set_application'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 888)
+
+
+Started GET "/applications/3" for ::1 at 2020-05-08 20:47:39 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mApplication Load (0.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 5.6ms | Allocations: 8423)
+
+
+  
+NoMethodError (undefined method `loans' for #<Application:0x00007fb9cc2c41f0>
+Did you mean?  load):
+  
+app/controllers/applications_controller.rb:14:in `show'
+Started GET "/applications/3" for ::1 at 2020-05-08 20:48:14 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mApplication Load (1.3ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:13:in `show'
+Completed 500 Internal Server Error in 165ms (ActiveRecord: 25.6ms | Allocations: 8454)
+
+
+  
+NoMethodError (undefined method `loan' for #<Application:0x00007fb9c40720f8>
+Did you mean?  load):
+  
+app/controllers/applications_controller.rb:14:in `show'
+Started GET "/applications/3" for ::1 at 2020-05-08 20:49:12 -0400
+Processing by ApplicationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mApplication Load (0.2ms)[0m  [1m[34mSELECT "applications".* FROM "applications" WHERE "applications"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/applications_controller.rb:13:in `show'
+  [1m[36mLoan Load (0.7ms)[0m  [1m[34mSELECT "loans".* FROM "loans" WHERE "loans"."application_id" = $1[0m  [["application_id", 3]]
+  ↳ app/controllers/applications_controller.rb:14:in `show'
+Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 7.8ms | Allocations: 12065)
+
+
+Started GET "/relationship_mgrs" for ::1 at 2020-05-08 20:52:34 -0400
+Processing by RelationshipMgrsController#index as HTML
+  [1m[36mRelationshipMgr Load (0.4ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs"[0m
+  ↳ app/controllers/relationship_mgrs_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 9.1ms | ActiveRecord: 4.3ms | Allocations: 4968)
+
+
+Started GET "/relationship_mgrs/2" for ::1 at 2020-05-08 20:52:39 -0400
+Processing by RelationshipMgrsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRelationshipMgr Load (0.4ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" WHERE "relationship_mgrs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:13:in `show'
+  [1m[36mBorrower Load (0.2ms)[0m  [1m[34mSELECT "borrowers".* FROM "borrowers" WHERE "borrowers"."relationship_mgr_id" = $1[0m  [["relationship_mgr_id", 2]]
+  ↳ app/controllers/relationship_mgrs_controller.rb:14:in `show'
+Completed 200 OK in 15ms (Views: 0.1ms | ActiveRecord: 2.9ms | Allocations: 7023)
+
+
