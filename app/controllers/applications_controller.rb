@@ -1,5 +1,5 @@
 class ApplicationsController < ApplicationController
-  # before_action :set_application, only: [:show, :update, :destroy]
+  before_action :set_application, only: [:show, :update, :destroy]
 
   # GET /applications
   def index
@@ -16,7 +16,10 @@ class ApplicationsController < ApplicationController
 
   # POST /applications
   def create
+    puts 'trying to create a new item'
+    
     @application = Application.new(application_params)
+
 
     if @application.save
       render json: @application, status: :created, location: @application
@@ -27,6 +30,7 @@ class ApplicationsController < ApplicationController
 
   # PATCH/PUT /applications/1
   def update
+   
     if @application.update(application_params)
       render json: @application
     else
@@ -41,12 +45,12 @@ class ApplicationsController < ApplicationController
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    # def set_application
-    #   @application = Application.find(params[:id])
-    # end
+    def set_application
+      @application = Application.find(params[:id])
+    end
 
     # Only allow a trusted parameter "white list" through.
     def application_params
-      params.require(:application).permit(:submit_date, :decision_date, :review_date, :status)
+      params.require(:application).permit(:id, :submit_date, :status, :borrower_id)
     end
 end
