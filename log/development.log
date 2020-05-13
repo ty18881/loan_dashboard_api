@@ -22554,3 +22554,5 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 174)
 
 
+  [1m[36mApplication Load (1.5ms)[0m  [1m[34mSELECT "applications".* FROM "applications" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mRelationshipMgr Load (0.9ms)[0m  [1m[34mSELECT "relationship_mgrs".* FROM "relationship_mgrs" LIMIT $1[0m  [["LIMIT", 11]]
